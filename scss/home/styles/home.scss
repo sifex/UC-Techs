@@ -1,0 +1,50 @@
+header {
+    margin: 30px 0;
+    .logo {
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20pt;
+    }
+    nav {
+        float: right;
+
+        a {
+            color: #FFF;
+            margin-right: 15px;
+        }
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+section.overview {
+    height: 100vh;
+    width: 100vw;
+    // background-image: url('http://i.imgur.com/li0523F.jpg');
+    background-image: url('/home/images/bg.jpg');
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h1, h3 {
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        margin-top: 40vh;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+
+        @include breakpoint(medium) {
+            // All CSS in here goes inside the media query
+        }
+
+    }
+    h3 {
+        margin-top: -10px;
+    }
+}
